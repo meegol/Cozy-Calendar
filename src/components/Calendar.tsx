@@ -38,7 +38,7 @@ export default function Calendar({ selectedDate, reminders, onDateSelect }: Cale
               className={`
                 aspect-square p-2 rounded-lg relative
                 hover:bg-orange-50 transition-colors
-                ${isSameDay(day, selectedDate) ? 'bg-orange-100 font-semibold' : 'bg-gray-50'}
+                ${isSameDay(day, selectedDate) ? 'bg-red-100 font-semibold' : 'bg-gray-50'}
               `}
             >
               <span className="text-sm">{format(day, 'd')}</span>
